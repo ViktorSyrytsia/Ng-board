@@ -1,9 +1,13 @@
+@import "../../../styles.scss";
+
 .sidenav-container {
   height: 100%;
 }
 
 .logo {
-  font-size: 1.2em;
+  font-family: $londrina;
+  font-size: 2em;
+  letter-spacing: 2px;
   cursor: pointer;
   outline: none;
 }

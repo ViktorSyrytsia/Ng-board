@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ngboard-59b83": {
+      "hosting": {
+        "ng-board": [
+          "ngboard-59b83"
+        ]
+      }
+    }
+  }
+}
