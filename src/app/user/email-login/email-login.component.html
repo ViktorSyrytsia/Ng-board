@@ -48,10 +48,7 @@
       </mat-error>
     </mat-form-field>
 
-    <mat-form-field
-      [color]="passwordDoesMatch ? 'accent' : 'warn'"
-      *ngIf="isSignup"
-    >
+    <mat-form-field [color]="passwordDoesMatch && 'accent'" *ngIf="isSignup">
       <input
         matInput
         formControlName="passwordConfirm"
