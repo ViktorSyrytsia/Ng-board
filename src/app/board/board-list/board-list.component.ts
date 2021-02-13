@@ -22,8 +22,7 @@ export class BoardListComponent implements OnInit, OnDestroy {
   constructor(private _listService: ListService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.sub = this._listService.getUserLists().pipe(tap((val) => {console.log(val);
-    })).subscribe(lists =>( this.lists = lists as IList[]));
+    this.sub = this._listService.getUserLists().subscribe(lists =>( this.lists = lists as IList[]));
   }
   ngOnDestroy() {
      this.sub?.unsubscribe();
