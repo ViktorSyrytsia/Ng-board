@@ -7,9 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { ListComponent } from './list/list.component';
+import { BoardListComponent } from './board-list/board-list.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [ListComponent, BoardListComponent],
   imports: [
     CommonModule,
     BoardRoutingModule,

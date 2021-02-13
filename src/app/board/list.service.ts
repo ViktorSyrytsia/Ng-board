@@ -37,7 +37,7 @@ export class ListService {
       });
   }
 
-  getUserBoards() {
+  getUserLists() {
     return this.afAuth.authState.pipe(
       switchMap((user): any => {
         if (user) {
