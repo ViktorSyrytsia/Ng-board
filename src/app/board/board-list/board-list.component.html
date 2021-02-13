@@ -9,4 +9,12 @@ class="lists"
       <mat-icon cdkDragHandle class="handle">drag_indicator</mat-icon>
     </app-list>
 
+    <div class="list-button">
+      <button
+      mat-raised-button
+      color="accent"
+      cdkDragDisabled
+      (click)="openListDialog()"
+      >New List</button>
+    </div>
 </div>
