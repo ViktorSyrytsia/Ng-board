@@ -40,4 +40,8 @@ export class ListComponent {
     })
   }
 
+  handleDelete() {
+    this._listService.deleteList(this.list.id!)
+  }
+
 }
