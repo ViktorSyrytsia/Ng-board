@@ -1,1 +1,12 @@
-<p>board-list works!</p>
+<div
+cdkDropList
+cdkDropListOrientation="horizontal"
+class="lists"
+(cdkDropListDropped)="drop($event)"
+>
+
+    <app-list cdkDrag *ngFor="let list of lists" [list]="list">
+      <mat-icon cdkDragHandle class="handle">drag_indicator</mat-icon>
+    </app-list>
+
+</div>
